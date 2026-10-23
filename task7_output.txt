@@ -1,0 +1,25 @@
+=== TASK 7: Arithmetic Intensity vs. Memory Bottlenecks ===
+Student ID: 230103386
+Detected Logical Cores: 12
+Array Size: 30,000,000 float64 elements
+---------------------------------------------------------------------------
+
+[Kernel A: Memory-Bound Vector Copy (B[i] = A[i])]
+Cores    | Time (ms)       | Speedup S(p)    | Efficiency E(p)
+-----------------------------------------------------------------
+1        | 40.27           | 1.00            | 100.00%        
+2        | 31.24           | 1.29            | 64.44%         
+12       | 22.99           | 1.75            | 14.59%         
+
+[Kernel B: Compute-Bound Math (sin(A) * cos(A) + tan(A))]
+Cores    | Time (ms)       | Speedup S(p)    | Efficiency E(p)
+-----------------------------------------------------------------
+1        | 655.01          | 1.00            | 100.00%        
+2        | 403.71          | 1.62            | 81.12%         
+12       | 145.30          | 4.51            | 37.57%         
+
+===========================================================================
+[Bottleneck Diagnosis]
+--> Kernel A (Vector Copy) STALLED in scaling due to RAM bus memory bandwidth saturation.
+    Memory-Bound Efficiency dropped to 14.59% at 12 cores vs Compute-Bound 37.57%.
+===========================================================================
