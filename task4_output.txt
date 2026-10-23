@@ -1,0 +1,18 @@
+=== TASK 4: Work Stealing & Scheduling Under Skew ===
+Student ID: 230103386
+Workers: 4 | Total Items: 1000
+------------------------------------------------------------
+Running Strategy A: Static Chunk Distribution...
+  -> Static Total Wall Time: 553.68 ms
+  -> Completion Delta (Min-Max): 127.96 ms
+
+Running Strategy B: Dynamic Scheduling (Chunk size = 1)...
+  -> Dynamic Total Wall Time: 582.75 ms
+  -> Completion Delta (Min-Max): 0.64 ms
+------------------------------------------------------------
+Summary:
+Strategy             | Total Time (ms)    | Completion Delta (ms) 
+----------------------------------------------------------------
+Static               | 553.68             | 127.96                
+Dynamic (Queue)      | 582.75             | 0.64                  
+================================================================
