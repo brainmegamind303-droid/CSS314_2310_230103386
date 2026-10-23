@@ -1,0 +1,14 @@
+==================================================
+ TASK 3: Prefix Scan (Parallel 2-Pass Chunked)
+==================================================
+Student ID: 230103386
+Array Size: 2,000,000 elements
+Worker Threads: 4
+
+--- Performance & Verification Output ---
+Serial Time (ms)   | 4.31
+Parallel Time (ms) | 13.98
+Speedup            | 0.31x
+Verification       | PASS
+Assert Match       | parallel_output[-1] == serial_output[-1] (11000726)
+==================================================
