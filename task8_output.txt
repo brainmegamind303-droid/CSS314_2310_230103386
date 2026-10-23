@@ -1,0 +1,16 @@
+=== TASK 8: CPU Blocked/Tiled Matrix Multiplication Geometry ===
+Student ID: 230103386
+Detected Logical Cores: 12
+Matrix Dimensions: 512 x 512
+---------------------------------------------------------------------------
+-> Non-Tiled Baseline        | Execution Latency: 103.02 ms
+-> Blocked Tile (16x16)      | Execution Latency: 259.09 ms
+-> Blocked Tile (64x64)      | Execution Latency: 12.88 ms
+---------------------------------------------------------------------------
+Summary:
+Strategy / Geometry       | Runtime (ms)    | Cache Behavior / Note
+---------------------------------------------------------------------------
+Non-Tiled Baseline        | 103.02          | Standard row striping (higher cache miss)
+Blocked Tile (16x16)      | 259.09          | Optimized L1/L2 cache locality
+Blocked Tile (64x64)      | 12.88           | Optimized L1/L2 cache locality
+===========================================================================
