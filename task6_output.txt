@@ -1,0 +1,17 @@
+=== TASK 6: Synchronization Cost & Data Loss ===
+Student ID: 230103386
+Threads: 4 | Increments per thread: 2,000,000
+Expected Final Value: 8,000,000
+------------------------------------------------------------
+[1. Unsafe Execution (No Locks)]
+  -> Actual Final Value: 8,000,000
+  -> Lost Updates: 0
+  -> Update Loss Percentage: 0.00%
+  -> Execution Time: 254.37 ms
+
+[2. Synchronized Execution (Mutex Lock)]
+  -> Actual Final Value: 8,000,000
+  -> Execution Time: 941.81 ms
+  -> Synchronization Time Penalty: 687.44 ms (3.70x slower)
+------------------------------------------------------------
+============================================================
