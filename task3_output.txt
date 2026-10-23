@@ -1,0 +1,10 @@
+=== TASK 3: Cache Line Invalidation & False Sharing ===
+Student ID: 230103386
+Worker Processes (N): 4
+Iterations per worker: 50,000,000
+------------------------------------------------------------
+1. Unpadded Shared Time : 4215.80 ms
+2. Padded / Local Time   : 1420.35 ms
+------------------------------------------------------------
+Execution Ratio (Unpadded / Padded): 2.97x
+============================================================
