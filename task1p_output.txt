@@ -1,0 +1,13 @@
+==================================================
+ TASK 1: Row-Major vs. Column-Major Cache Profiling
+==================================================
+Student ID: 230103386
+Logical Core Count: 12
+Matrix Dimension: 8000 x 8000 float64 (488.28 MB)
+
+[Console Output]
+Student ID: 230103386 | Logical Core Count: 12
+Mode A Runtime (Row-Major):    2153.19 ms
+Mode B Runtime (Column-Major): 2637.83 ms
+Cache Penalty Factor:          1.23x
+==================================================
