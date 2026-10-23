@@ -1,0 +1,12 @@
+=== TASK 1: Hardware Probe & Serial Baseline ===
+Student ID: 230103386
+OS: Windows 11 (10.0.26200)
+Platform / Machine: AMD64
+Processor: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel
+Total Logical Cores: 12
+--------------------------------------------------
+Generating 20,000,000 float64 elements with seed: 230103386
+Computing sum and standard deviation (serial)...
+Sum: 9998885.947513547
+Standard Deviation: 0.28867583436272465
+Execution Time: 141.12 ms
