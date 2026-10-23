@@ -1,0 +1,17 @@
+=== TASK 5: The Overhead Crossover Point ===
+Student ID: 230103386
+Detected Logical Cores: 12
+---------------------------------------------------------------------------
+N (Size)     | Serial (ms)     | Parallel (ms)   | Parallel Status
+---------------------------------------------------------------------------
+100          | 0.0254          | 1.3073          | SLOWER         
+1,000        | 0.0082          | 0.7630          | SLOWER         
+10,000       | 0.0140          | 1.0159          | SLOWER         
+100,000      | 0.1935          | 1.0800          | SLOWER         
+1,000,000    | 3.1718          | 3.8644          | SLOWER         
+10,000,000   | 34.4051         | 23.9941         | FASTER         
+===========================================================================
+
+[Crossover Analysis]
+--> Crossover Range detected: Between N = 1,000,000 and N = 10,000,000
+--> Multi-threading becomes FASTER than serial execution starting at N = 10,000,000
