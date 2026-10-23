@@ -1,0 +1,20 @@
+==================================================
+ TASK 2: Pseudo-Random Generator State Bottleneck
+==================================================
+Student ID: 230103386
+Total Monte Carlo Samples: 40,000,000
+Worker Threads: 4
+
+--- Mode 1: Shared PRNG (Lock Synchronized) ---
+Computed Pi:     3.14202430
+Absolute Error:  4.31646410e-04
+Wall Time:       8894.41 ms
+
+--- Mode 2: Independent PRNG (Thread-Local State) ---
+Computed Pi:     3.14157710
+Absolute Error:  1.55535898e-05
+Wall Time:       4899.38 ms
+
+--- Profiling Summary ---
+Speedup Factor (Lock Elimination): 1.82x
+==================================================
